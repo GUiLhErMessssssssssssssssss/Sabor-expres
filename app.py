@@ -7,19 +7,13 @@ pecas = [{'nome': 'Paça', 'categoria': 'vidro temperado', 'ativo': False},
 def exibir_nome_do_programa():
     """Essa função é responsável por exibir o nome da aplicação"""
     print("""
-    ░░░░░██╗███╗░░░███╗
-░░░░░██║████╗░████║
-░░░░░██║██╔████╔██║
-██╗░░██║██║╚██╔╝██║
-╚█████╔╝██║░╚═╝░██║
-░╚════╝░╚═╝░░░░░╚═╝
 
-██╗░░░██╗██╗██████╗░██████╗░░█████╗░░█████╗░░█████╗░
-██║░░░██║██║██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔══██╗
-╚██╗░██╔╝██║██║░░██║██████╔╝███████║██║░░╚═╝███████║
-░╚████╔╝░██║██║░░██║██╔══██╗██╔══██║██║░░██╗██╔══██║
-░░╚██╔╝░░██║██████╔╝██║░░██║██║░░██║╚█████╔╝██║░░██║
-░░░╚═╝░░░╚═╝╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝""")
+░░░░░██╗███╗░░░███╗  ██╗░░░██╗██╗██████╗░██████╗░░█████╗░░█████╗░░█████╗░██████╗░██╗░█████╗░
+░░░░░██║████╗░████║  ██║░░░██║██║██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔══██╗██║██╔══██╗
+░░░░░██║██╔████╔██║  ╚██╗░██╔╝██║██║░░██║██████╔╝███████║██║░░╚═╝███████║██████╔╝██║███████║
+██╗░░██║██║╚██╔╝██║  ░╚████╔╝░██║██║░░██║██╔══██╗██╔══██║██║░░██╗██╔══██║██╔══██╗██║██╔══██║
+╚█████╔╝██║░╚═╝░██║  ░░╚██╔╝░░██║██████╔╝██║░░██║██║░░██║╚█████╔╝██║░░██║██║░░██║██║██║░░██║
+░╚════╝░╚═╝░░░░░╚═╝  ░░░╚═╝░░░╚═╝╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝╚═╝░░╚═╝""")
 
 def exibir_opcoes():
     """Essa função é responsável por exibir os menus"""
@@ -46,7 +40,7 @@ def opcao_invalida():
 
 def exibir_subtitulo(texto):
     """Essa função cria um padrão de exibição para os títulos do menu escolhido"""
-    os.system('cls' if os.name == 'nt' else 'clear')
+    os.system('clear' if os.name == 'nt' else 'clear')
     linha = '*' * len(texto)
     print(linha)
     print(texto)
@@ -113,7 +107,7 @@ def escolher_opcao():
 
 def main():
     """Essa função reseta o programa para a tela principal, exibindo o nome e os menus"""
-    os.system('cls' if os.name == 'nt' else 'clear')
+    os.system('clear' if os.name == 'nt' else 'clear')
     exibir_nome_do_programa()
     exibir_opcoes()
     escolher_opcao()
