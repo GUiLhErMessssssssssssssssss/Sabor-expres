@@ -40,8 +40,8 @@ def opcao_invalida():
 
 def exibir_subtitulo(texto):
     """Essa função cria um padrão de exibição para os títulos do menu escolhido"""
-    os.system('clear' if os.name == 'nt' else 'clear')
-    linha = '*' * len(texto)
+    os.system('cls' if os.name == 'nt' else 'clear')
+    linha = '-' * len(texto)
     print(linha)
     print(texto)
     print(linha)
@@ -107,7 +107,7 @@ def escolher_opcao():
 
 def main():
     """Essa função reseta o programa para a tela principal, exibindo o nome e os menus"""
-    os.system('clear' if os.name == 'nt' else 'clear')
+    os.system('cls' if os.name == 'nt' else 'clear')
     exibir_nome_do_programa()
     exibir_opcoes()
     escolher_opcao()
