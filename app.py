@@ -1,8 +1,8 @@
 import os
 
-pecas = [{'nome': 'Paça', 'categoria': 'vidro temperado', 'ativo': False},
-         {'nome': 'peça', 'categoria': 'janela', 'ativo': True},
-         {'nome': 'peça', 'categoria': 'box', 'ativo': False}]
+pecas = [{'nome': 'Porta', 'categoria': 'vidro temperado', 'ativo': False},
+         {'nome': 'Fechadura', 'categoria': 'janela', 'ativo': True},
+         {'nome': 'Puxador', 'categoria': 'box', 'ativo': False}]
 
 def exibir_nome_do_programa():
     """Essa função é responsável por exibir o nome da aplicação"""
@@ -19,7 +19,7 @@ def exibir_opcoes():
     """Essa função é responsável por exibir os menus"""
     print("1. Cadastrar peças")
     print("2. Listar peças")
-    print("3. Apagar peça")
+    print("3. Ativar peça")
     print("4. Sair\n")
 
 def finalizar_app():
